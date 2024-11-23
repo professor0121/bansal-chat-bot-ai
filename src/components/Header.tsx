@@ -1,6 +1,5 @@
 import React from 'react';
 import { School } from 'lucide-react';
-import AboutUs from './aboutus';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -14,12 +13,13 @@ const Header = () => {
             <p className="text-blue-200">Bhopal, Madhya Pradesh</p>
           </div>
         </div>
-        <nav className="md:flex space-x-6">
+        <nav className=" md:flex space-x-6">
 
-          <a href="#" className="hover:text-blue-200 transition-colors">About</a>
-          <a href="#" className="hover:text-blue-200 transition-colors">Courses</a>
-          <a href="#" className="hover:text-blue-200 transition-colors">Admissions</a>
-          <a href="#" className="hover:text-blue-200 transition-colors">Contact</a>
+          <a href="https://bgibhopal.com/" className="hover:text-blue-200 transition-colors">About</a>
+          <a href="https://bgibhopal.com/online-fee-payment/" className="hover:text-blue-200 transition-colors">Courses</a>
+          <a href="https://bgibhopal.com/online-fee-payment/" className="hover:text-blue-200 transition-colors">Admissions</a>
+          <a href="https://bgibhopal.com/" className="hover:text-blue-200 transition-colors">Contact</a>
+          <a href="https://bgibhopal.com/examination/" className="hover:text-blue-200 transition-colors">Result</a>
         </nav>
       </div>
     </header>
