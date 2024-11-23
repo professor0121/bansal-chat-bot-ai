@@ -91,7 +91,7 @@ function getBotResponse(input: string): string {
   const lowerInput = input.toLowerCase();
   
   if (lowerInput.includes('admission') || lowerInput.includes('apply')) {
-    return 'For admissions, please visit our admission portal at www.bansalinstitute.com/admissions or contact our admission office at +91-XXXXXXXXXX. We offer various undergraduate and postgraduate programs in Engineering, Management, and Computer Applications.';
+    return 'For admissions, please visit our admission portal at https://bgibhopal.com//admissions or contact our admission office at +91-XXXXXXXXXX. We offer various undergraduate and postgraduate programs in Engineering, Management, and Computer Applications.';
   }
   
   if (lowerInput.includes('course') || lowerInput.includes('program')) {
@@ -108,6 +108,16 @@ function getBotResponse(input: string): string {
   
   if (lowerInput.includes('faculty') || lowerInput.includes('teacher')) {
     return 'Our faculty members are highly qualified professionals with extensive academic and industry experience. Many hold Ph.D. degrees and regularly publish research papers.';
+  }
+  if (lowerInput.includes('Document') || lowerInput.includes('Required')) {
+    return 'For documents visit https://bgibhopal.com/online-fee-payment/';
+  }
+  
+  if (lowerInput.includes('facilities') || lowerInput.includes('facility') || lowerInput.includes('services')|| lowerInput.includes('service')) {
+    return ' bus , hostel, canteen, library, online fee payment and so many more ';
+  }
+  if (lowerInput.includes('result') || lowerInput.includes('outcome') || lowerInput.includes('output')|| lowerInput.includes('successrate')) {
+    return `For result visit https://bgibhopal.com/examination`;
   }
   
   return "I'm here to help you with information about Bansal Group of Institution. You can ask about admissions, courses, fees, facilities, or any other aspect of our institution.";
